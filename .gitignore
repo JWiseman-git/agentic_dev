@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Secrets
+.env
+
+# uv related
+uv.lock
+
 # Distribution / packaging
 .Python
 build/

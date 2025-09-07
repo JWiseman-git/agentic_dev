@@ -1,0 +1,12 @@
+[project]
+name = "agentic-dev"
+version = "0.1.0"
+description = "Trialling some of the newer agentic releases"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain[openai]>=0.3.27",
+    "langsmith>=0.4.25",
+    "pydantic>=2.11.7",
+    "python-dotenv>=1.1.1",
+]
