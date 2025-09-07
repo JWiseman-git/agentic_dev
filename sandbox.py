@@ -1,3 +1,5 @@
+# Langchain docs step: https://python.langchain.com/docs/tutorials/llm_chain/
+
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, SystemMessage
 from pathlib import Path
@@ -37,6 +39,21 @@ class Joke(BaseModel):
     )
 
 
-structured_llm = llm.with_structured_output(Joke)
+# structured_llm = llm.with_structured_output(Joke)
+#
+# structured_llm.invoke("Tell me a joke about cats")
 
-structured_llm.invoke("Tell me a joke about cats")
+#
+
+from langchain_core.documents import Document
+
+documents = [
+    Document(
+        page_content="Dogs are great companions, known for their loyalty and friendliness.",
+        metadata={"source": "mammal-pets-doc"},
+    ),
+    Document(
+        page_content="Cats are independent pets that often enjoy their own space.",
+        metadata={"source": "mammal-pets-doc"},
+    ),
+]
