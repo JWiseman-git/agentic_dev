@@ -9,6 +9,9 @@ __pycache__/
 # Secrets
 .env
 
+#small
+temp.py
+
 # uv related
 uv.lock
 
